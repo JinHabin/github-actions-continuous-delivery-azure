@@ -1,3 +1,9 @@
-name: CHANGETHIS
+name: Stage the app
 
-on: Edit
+on: 
+  pull_request:
+    types: [labeled]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
